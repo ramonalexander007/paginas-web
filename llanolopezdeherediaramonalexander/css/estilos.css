@@ -1,0 +1,87 @@
+/* importamos la tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* le aplicamos el tipo de letra a todas las etiquetas y le aplicamos un margin 0, ya que de por si aplica un pequeño margen */
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* a cada seccion le ponemos una imagen de fondo */
+
+.playa{
+    background-image: url(../imagenes/8catalanes.jpg);
+}
+
+.montana{
+    background-image: url(../imagenes/8vascos.jpg);
+}
+
+.luna{
+    background-image: url(../imagenes/mision-imposible.jpg);
+}
+
+.desierto{
+    background-image: url(../imagenes/perfectos-desconocidos.jpg);
+}
+
+.spa{
+    background-image: url(../imagenes/ted.jpg);
+}
+
+.city{
+    background-image: url(../imagenes/vamos-de-polis.jpg);
+}
+
+.candy{
+    background-image: url(../imagenes/resacon-vegas.jpg);
+}
+
+.vacaciones h2{
+    font-weight: 400;
+    color: ghostwhite;
+    font-size: 5em;
+    padding-left: 2em;
+}
+
+.vacaciones {
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+/* menu de navegacion */
+
+nav li{
+    list-style: none;
+
+}
+
+nav a{
+    text-decoration: none;
+    color: ghostwhite;
+}
+ 
+nav{
+    display: flex;
+    height: 15vh;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* menu de navegacion al pasar por encima */
+
+nav li a:hover{
+    color: lightcoral;
+    box-shadow: 5px 5px 5px 5px lawngreen;
+}
+
+.vacaciones h2{
+    color: coral;
+}

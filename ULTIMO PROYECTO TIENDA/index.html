@@ -1,0 +1,175 @@
+<!doctype html>
+
+<html lang="es">
+	<head>
+		<title>PIZZERIA DANUBIO</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+        
+        <div class="foto">
+                    <img width="100%" height="520" src="img/pizza-carbonara.jpg" id="fotocambia"/> <br/> 
+                    <button id="boton_stop">Stop</button>
+        
+                    <button id="boton_play">Play</button>
+       
+        
+                </div>
+        
+        <header>
+        
+            <img id="foton" src="img/logo.png" alt="logotipo danubio pizzeria">
+            <nav>
+                <ul>
+                    <li class="separacion">INICIO</li>
+                    <li><a class="separacion" href="#">MENU</a></li>
+                    <li><a class="separacion" href="contacto.html">CONTACTO</a></li>
+                    <li><a href="reserva.html">RESERVA</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        <div class="cuerpo">
+            <div class="contenedor">
+                <div>
+                    <h2>ENTRANTES</h2>
+                    <a href="carta/carta-entrantes.html"><img class="imagenes" src="img/entrantes.jpg" alt="entrantes calientes"></a>
+                </div>
+                <div>
+                    <h2>ENSALADAS</h2>
+                    <a href="carta/carta-ensaladas.html"><img class="imagenes" src="img/ensaladas.jpg" alt="ensaladas caseras"></a>
+                </div>
+                <div>
+                    <h2>ARROCES</h2>
+                    <a href="carta/carta-arroces.html"><img class="imagenes" src="img/arroces.jpg" alt="arroces"></a>
+                </div>
+
+            </div>
+            <div class="contenedor">
+
+                <div>
+                    <h2>GRATINADOS</h2>
+                    <a href="carta-gratinados.html"><img class="imagenes" src="img/gratinados-imagen.jpg" alt="gratinados caseros"></a>
+                </div>
+                <div>
+                    <h2>CARNES BRASA</h2>
+                    <a href="carta/carta-carnes-brasa.html"><img class="imagenes" src="img/carnes-brasa.jpg" alt="carnes a la brasa"></a>
+                </div>
+                <div>
+                    <h2>HAMBURGUESA</h2>
+                    <a href="carta/carta-hamburguesas.html"><img class="imagenes" src="img/hambuerguesas.jpg" alt="hamburguesas caseras"></a>
+                </div>
+
+            </div>
+            <div class="contenedor" class="a1">
+
+                <div>
+                    <h2>POSTRES</h2>
+                    <a href="carta/carta-postres.html"><img class="imagenes" src="img/postres.jpg" alt="postres de la casa"></a>
+                </div>
+                <div>
+                    <h2>REFRESCOS</h2>
+                    <a href="carta/bebidas-no-alcoholicas.html"><img class="imagenes" src="img/refrescos-no-alcoholicos.jpg" alt="bebidas"></a>
+                </div>
+                <div>
+                    <h2>COCKTAILES</h2>
+                    <a href="carta/bebidas-alcoholicas-y-alta-graduacion.html"><img class="imagenes" src="img/bebidas-alholicas-y-coctailes.jpg" alt="bebidas alcoholicas y cockailes"></a>
+                </div>
+
+            </div>
+            <div class="contenedor" class="a1">
+
+                <div>
+                    <h2>PIZZAS</h2>
+                    <a href="carta/carta-pizzas.html"><img class="imagenes" src="img/imagen-pizzas.jpg" alt="postres de la casa"></a>
+                </div>
+
+            </div>
+        </div>
+        
+        
+        <footer>
+        
+            <div>
+                <p>Todos los platos son elaborados con masa <br>fresca y productos de nuestra huerta.</p>
+            </div>
+            <div>
+                <p>CONTACTO:<br>TELEFONO: +34 763839738<br>DIRECCIÓN: Calle Paz, 45 bajo<br>Vitoria-Gasteiz, Álava, 01003<br>EMAIL: pizzeriadanubio@gmail.com</p>
+            </div>
+            <div>
+                <img src="img/logo.png" alt="danubio pizzeria">
+            </div>
+        
+        </footer>
+        
+        <script>
+            
+            
+            
+            var id_setinterval;
+            
+            var cont = 0;
+            
+            function cambiar() {
+                
+                cont++;
+                
+                switch(cont% 4+1){
+
+                    case 1:
+                        document.getElementById("fotocambia").src="img/pizza-carbonara.jpg";
+                        break;
+                    case 2:
+                        document.getElementById("fotocambia").src="img/arroces.jpg";
+                        break;
+                    case 3:
+                        document.getElementById("fotocambia").src="img/entrantes.jpg";
+                        break;     
+                    case 4:
+                        document.getElementById("fotocambia").src="img/hambuerguesas.jpg";
+                        break;
+                        
+                }
+            }
+
+            function inicio() {
+                
+                id_setinterval = setInterval(cambiar, 1000);                        
+            }
+
+
+            window.onload = inicio; 
+            
+            function parar() {
+                
+                clearInterval(id_setinterval);
+                
+            }
+            
+            function reiniciar() {
+                
+                clearInterval(id_setinterval);
+                
+                id_setinterval = setInterval(cambiar, 2000);
+                
+            }
+            
+            
+            
+            window.onload=cambiar;
+            
+            
+            document.getElementById("boton_stop").onclick = parar;
+            
+            document.getElementById("boton_play").onclick = reiniciar;
+
+        </script>
+
+	</body>
+</html>

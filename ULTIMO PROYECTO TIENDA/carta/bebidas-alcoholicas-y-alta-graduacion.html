@@ -1,0 +1,150 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>BEBIDAS ALCOHOLICAS Y COCKTAILES</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <link href="../css/beb-si.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+        
+        <div class="foto">
+                    <img width="100%" height="520" src="../img/pizza-carbonara.jpg" id="fotocambia"/> <br/> 
+                    <button id="boton_stop">Stop</button>
+        
+                    <button id="boton_play">Play</button>
+       
+        
+                </div>
+        
+        <header>
+        
+            <img id="foton" src="../img/logo.png" alt="logotipo danubio pizzeria">
+            <nav>
+                <ul>
+                    <li class="separacion" ><a href="../index.html">INICIO</a></li>
+                    <li><a class="separacion" href="../index.html">MENU</a></li>
+                    <li class="separacion"><a href="../contacto.html"></a>CONTACTO</li>
+                    <li><a href="reserva.html">RESERVA</a></li>
+                </ul>
+            </nav>
+            
+            
+        </header>
+        
+        <div class="cuerpo">
+            <h2 id="coc">COCKTAILES</h2>
+            <div class="contenedor">
+                <div>
+                    <h2>GIN LEMON</h2>
+                    <img class="imagenes" src="../img/bebidas-alc/ginebra-limon-copa.jpeg" alt="ginebra limon">
+                </div>
+                <div>
+                    <h2>GIN RED BULL</h2>
+                    <img class="imagenes" src="../img/bebidas-alc/gin-redbull.jpg" alt="ginebra redbull">
+                </div>
+                <div>
+                    <h2>PUERTO INDIAS LEMON</h2>
+                    <img class="imagenes" src="../img/bebidas-alc/Puerto-de-Indias-lemon.jpg" alt="puerto de indias con limon">
+                </div>
+
+            </div>
+            <div class="contenedor">
+                <div>
+                    <h2>RON COLA</h2>
+                    <img class="imagenes" src="../img/bebidas-alc/roncola.jpg" alt="ron con coca cola">
+                </div>
+                <div>
+                    <h2>TEQUILA FRESA</h2>
+                    <img class="imagenes" src="../img/bebidas-alc/tequila-fresa.jpg" alt="tequila de fresa">
+                </div>
+                <div>
+                    <h2>WHISKI GRANADINA</h2>
+                    <img class="imagenes" src="../img/bebidas-alc/wiski-con-granadina.jpg" alt="wiski con granadina">
+                </div>
+
+            </div>
+         </div>
+        
+        
+        <footer>
+        
+            <div>
+                <p>Todos los platos son elaborados con masa <br>fresca y productos de nuestra huerta.</p>
+            </div>
+            <div>
+                <p>CONTACTO:<br>TELEFONO: +34 763839738<br>DIRECCIÓN: Calle Paz, 45 bajo<br>Vitoria-Gasteiz, Álava, 01003<br>EMAIL: pizzeriadanubio@gmail.com</p>
+            </div>
+            <div>
+                <img src="../img/logo.png" alt="logotipo danubio pizzeria">
+            </div>
+        
+        </footer>
+        
+        <script>
+            
+            
+            
+            var id_setinterval;
+            
+            var cont = 0;
+            
+            function cambiar() {
+                
+                cont++;
+                
+                switch(cont% 4+1){
+
+                    case 1:
+                        document.getElementById("fotocambia").src="../img/pizza-carbonara.jpg";
+                        break;
+                    case 2:
+                        document.getElementById("fotocambia").src="../img/arroces.jpg";
+                        break;
+                    case 3:
+                        document.getElementById("fotocambia").src="../img/entrantes.jpg";
+                        break;     
+                    case 4:
+                        document.getElementById("fotocambia").src="../img/hambuerguesas.jpg";
+                        break;
+                        
+                }
+            }
+
+            function inicio() {
+                
+                id_setinterval = setInterval(cambiar, 600);                        
+            }
+
+
+            window.onload = inicio; 
+            
+            function parar() {
+                
+                clearInterval(id_setinterval);
+                
+            }
+            
+            function reiniciar() {
+                
+                clearInterval(id_setinterval);
+                
+                id_setinterval = setInterval(cambiar, 2000);
+                
+            }
+            
+            
+            
+            window.onload=cambiar;
+            
+            
+            document.getElementById("boton_stop").onclick = parar;
+            
+            document.getElementById("boton_play").onclick = reiniciar;
+
+        </script>
+
+	</body>
+</html>

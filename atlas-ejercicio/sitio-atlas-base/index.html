@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link href="css/estilos.css" rel="stylesheet"/>
+    <style>
+        
+        body{
+            background-color: lightblue;
+        }
+        
+        #contenedor{
+            max-width: 1100px;
+            margin: auto;
+            background-color: white;
+        }
+        
+        #menu li{
+            list-style: none;
+            display: inline-block;
+            padding: 0 65px;
+        }
+        
+        #menu a{
+            width: 100%;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        
+        #cabecera{
+            padding-top: 10px;
+        }
+        
+        #cabecera img{
+            width: 90%;
+            height: 500px;
+            margin: auto;
+            padding: 15px;
+        }
+        
+        #cabecera a{
+            text-decoration: none;
+            font-size: 25px;
+            color: aqua;
+            padding:15px;
+            
+        }
+        
+        #menu{
+            border-top: solid 1px aqua;
+            border-bottom: solid 1px aqua;
+        }
+        
+        
+        .sinlink{
+            color: aqua;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        
+        #principal{
+            display: flex;
+        }
+        
+        #principal article{
+            flex: 0 1 50%;
+            padding: 15px;
+        }
+        
+        #principal img{
+            flex: 0 1 50%;
+            padding: 15px;
+        }
+        
+        footer{
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            color: aqua;
+        }
+        
+        header h1{
+            padding: 15px;
+        }
+        
+    </style>
+</head>
+
+<body>
+	<div id="contenedor">
+    		<header id="cabecera">
+                <a href="index.html"><h1>Atlas</h1></a>
+                <img src="images/foto1.jpg" />           
+            </header>
+            
+            <nav id="menu">
+            	<ul>
+                	<li class="sinlink">nosotros</li>
+                    <li><a href="#">actividades</a></li>
+                    <li><a href="#">tarifas</a></li>
+                    <li><a href="#">contacto</a></li>
+                </ul>
+            
+            </nav>
+            
+            <section id="principal">
+            	<article>
+                    <h2>Nosotros</h2>
+                    <p>Ad ullamco comprehenderit nam commodo illustriora aut ingeniis iis deserunt 
+                        multos a mandaremus voluptatibus, minim mentitum comprehenderit.</p>
+                    <p>Nam commodo illustriora aut ingeniis iis deserunt multos a mandaremus voluptatibus, minim mentitum comprehenderit.</p>
+                    <p>Commodo illustriora aut ingeniis iis deserunt multos a mandaremus voluptatibus, minim mentitum comprehenderit.</p>
+                    <p>ullamco comprehenderit nam commodo illustriora aut ingeniis iis deserunt.</p>
+				</article>
+                <div id="imagen">
+                    <img src="images/foto2.jpg"/>
+                </div>
+            </section>
+            
+            <footer id="pie">
+            	<address>C/ Principal nº32</address>
+            </footer>
+            
+    </div>
+
+
+</body>
+</html>

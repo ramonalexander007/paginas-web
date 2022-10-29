@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+	</head>
+
+	<body>
+        
+        
+        
+        <h1 id="h1">Hola, ¿que tal estas?</h1>
+        
+      <button id="boton1">MAYUSCULAS/RESTABLECER</button>
+
+        
+        
+        
+        <script>
+   
+            var documento;
+        
+        function ingresar() {
+            var campo_dato = document.getElementsByTagName("h1")[0].textContent();
+             documento=document.write(campo_dato.toUpperCase());
+        }
+        
+        function extraer() {
+            var d=document.getElementsByTagName("h1")[0].textContent;
+            document.write(d);
+        }
+        
+//        document.getElementById("boton1").addEventListener("click", ingresar);
+//        document.getElementById("boton1").addEventListener("click", extraer);
+
+        document.getElementById("boton1").onclick=ingresar;
+        document.getElementById("boton1").onclick=extraer;
+            
+        
+        </script>
+        
+        
+        
+
+	</body>
+</html>

@@ -1,0 +1,138 @@
+h1{
+                font-family: 'Dancing Script', cursive;
+            }
+            
+            nav li{
+                list-style: none;
+                display: inline-block;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            
+            body{
+                margin: 0;
+                background-color: #7FFFD4;
+            }
+            
+            nav li:hover{
+                color: firebrick;
+                background-color: dodgerblue;
+            }
+            
+            footer{
+                width: 100%;
+                background-color: bisque;
+            }
+            
+            body{
+                width: 70%;
+                margin: auto;
+            }
+            
+            .slider-frame {
+	width: auto;
+    height: auto;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 10s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+    margin: auto;
+    height: 350px;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+            
+            header{
+                padding: 25px;
+                background-color: bisque;
+            }
+            
+            li{
+                padding: 14px;
+            }
+            
+            h1{
+                text-align: center;
+            }
+            
+            #helados{
+                background-color: bisque;
+                padding: 25px;
+            }
+            
+            h2{
+                text-align: center;
+                color: firebrick;
+                border: solid 10px black;
+                font-family: 'Dancing Script', cursive;
+            }
+            
+            .qq1{
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+                border: 2px solid lightgrey;
+            }
+            
+            .mm1{
+                border-bottom: solid 3px black;
+                padding-bottom: 2px;
+            }
+            
+            div{
+                
+                margin: 10px;
+            }
+            
+            div>img{
+                height: 150px;
+            }
+            
+            footer{
+                padding: 20px;
+                width:96%;
+                
+            }
+            
+            .hh1{
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            div>div{
+                border: solid 4px black;
+            }
+            
+            img>p{
+                background-color: aquamarine;
+            }
+            

@@ -1,0 +1,149 @@
+<!doctype html>
+
+<html lang="es">
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+        <link href="css/estilos.css" rel="stylesheet">
+        <link href="css/media-screen-750px.css" rel="stylesheet">
+        <link href="css/media-screen-360px.css" rel="stylesheet">
+        <link href="css/media-screen-375px.css" rel="stylesheet">
+	</head>
+
+	<body>
+<!--        creamos uh contenedor en el que va a estar                  todo el contenido de la web metido-->
+        <div id="contenedor1">
+<!--            creamos una cabecera en el que meteremos                    una imagen y un menu horizontal-->
+            <header id="header">
+                <img class="logo" src="img/devops.png" alt="devops">
+                <nav>
+                    <ul>
+                        <li><a href="#contenedor-cursos">CURSOS</a></li>
+                        <li><a href="#contenedor-comentarios">COMENTARIOS</a></li>
+                        <li><a href="#contenedor-formulario">FORMULARIO</a></li>
+                        <li><a href="#contenedor-galeria">GALERIA</a></li>
+                    </ul>
+                </nav>
+            </header>
+<!--            crearemos un div para esta seccion,                         creando un subtitulo(h2) y cuatro divs                      en los cuales meteremos en cada div                     hijo una imagen del curso que estamos                   ofertando y dos "p", en el primero                      meteremos el nombre del curso y en el                   segundo informacion extra del curso-->
+            <div id="contenedor-cursos">
+                
+                <h2 >CURSOS</h2>
+                <div id="clase">
+                    <div class="a1">
+                        <img class="img1" src="img/html.png" alt="html">
+                        <p>CURSO DE HTML  19.99€</p>
+                        <p>En este curso apenderas a como crear una pagina web desde cero, pasando por lo más simple hasta lo avanzado. Creando formularios, tablas, listas, etc...</p>
+                        <button value="COMPRAR">COMPRAR CURSO</button>
+                    </div>
+                    <div class="a1">
+                        <img class="img1" src="img/css.png" alt="css">
+                        <p>CURSO DE CSS  19.99€</p>
+                        <p>En este curso aprenderás a darle estilos a la pagina web, para que quede bonita y tenga mejor apariencia, desde lo más basico hasta lo más avanzado, incluyendo la adaptabilidad para dispositivos moviles de cualquier tamaño de pantalla.</p>
+                        <button value="COMPRAR">COMPRAR CURSO</button>
+                    </div>
+                    <div class="a1">
+                        <img class="img1" src="img/js.png" alt="javascript">
+                        <p>CURSO DE JAVASCRIPT  15.99€</p>
+                        <p>En este curso podrás aprender a crear tanto transiciones hasta videojuegos en entorno web, con multiples posibilidades para la interacción del usuario.</p>
+                        <button value="COMPRAR">COMPRAR CURSO</button>
+                    </div>
+                    <div class="a1">
+                        <img class="img1" src="img/php.png" alt="php">
+                        <p>CURSO DE PHP  26.99€</p>
+                        <p>En este curso podreis crear pasarelas de pago, como conexión con bases de datos, lo que se podrá crear usuarios, eliminarlos y hacer consultar con sql o mysql.</p>
+                        <button value="COMPRAR">COMPRAR CURSO</button>
+                    </div>
+                </div>    
+            </div>
+<!--            en esta segunda parte, metremos un div                  padre, y luego meteremos en cada div una                imagen de la persona que realiza el                     comentario, y el comentario del curso que ha            realizado-->
+            <div id="contenedor-comentarios">
+                <h2 name="coment">COMENTARIOS</h2>
+                <div id="comentarios">
+                    <div class="u1">
+                        <img class="img2" src="img/ninio.jpg" alt="niño">
+                        <p>Esta academia de programación  es de las mejores que he probado hasta ahora. Y que siga siendo así, totalmente recomendable.</p>
+                    </div>
+                    <div class="u1">
+                        <img class="img2" src="img/mujer.png" alt="mujer1">
+                        <p>Esta academia de programación  es de las mejores que he probado hasta ahora. Y que siga siendo así, totalmente recomendable.</p>
+                    </div>
+                    <div class="u1">
+                        <img class="img2" src="img/mujer-2.png" alt="mujer2">
+                        <p>Esta academia de programación  es de las mejores que he probado hasta ahora. Y que siga siendo así, totalmente recomendable.</p>
+                    </div>
+                    <div class="u1">
+                        <img class="img2" src="img/mujer-3.png" alt="mujer3">
+                        <p>Esta academia de programación  es de las mejores que he probado hasta ahora. Y que siga siendo así, totalmente recomendable.</p>
+                    </div>
+                </div>    
+            </div>
+<!--            en esta seccion meteremos tres imagenes                 por linea, metidos en un mismo div-->
+            <div id="contenedor-galeria">
+               
+                <h2 name="gal">GALERIA DE IMAGENES</h2>
+                <div id="fotos">
+                    <div>
+                        <img class="im" src="img/html.png" alt="html">
+                        <img class="im" src="img/c++.png" alt="c++">
+                        <img class="im" src="img/js.png" alt="js">
+                    </div>
+                    <div>
+                        <img class="im" src="img/css.png" alt="css">
+                        <img class="im" src="img/java.png" alt="java">
+                        <img class="im" src="img/android.jpg" alt="android">
+                    </div>
+                    <div>
+                        <img class="im" src="img/swift.png" alt="swift">
+                        <img class="im" src="img/cc.png" alt="c#">
+                        <img class="im" src="img/sql.png" alt="sql">
+                    </div>
+                </div>
+            </div>
+<!--            creamos el formulario, el cual va a tener               un mapa, labels e input de nombre, correo               electronico,  numero de telefono, dni/nif y             un mensaje para enviarlo-->
+            <h2>FORMULARIO DE CONTACTO</h2>
+            <div id="contenedor-formulario">
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380249.15603009897!2d-3.8504886078806577!3d40.45876396105279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42297fa267bd07%3A0x6b689d24fc43fa8a!2sID%20Bootcamps%20en%20remoto!5e0!3m2!1ses!2ses!4v1656564190477!5m2!1ses!2ses" width="620" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               
+                <form action="datos.php" method="post" name="formulario-tienda" id="form">
+                    <label for="name">NOMBRE:</label><br>
+                    <input type="text" name="name" id="name" required placeholder="escribe tu nombre"><br>
+                    <label for="email">CORREO ELECTRONICO:</label><br>
+                    <input type="email" name="email" id="email" required placeholder="escribe tu correo"><br>
+                    <label for="numero">NUMERO DE TELEFONO:</label><br>
+                    <input type="tel" required name="numero" id="numero" placeholder="escribe tu numero de telefono"><br>
+                    <label for="mensaje">MENSAJE:</label><br>
+                    <textarea required cols="20" rows="10" placeholder="escribe tu comentario"></textarea><br>
+                    <input type="submit" value="ENVIAR DATOS"><br>
+                    <input type="reset" value="BORRAR DATOS"><br>
+                </form>
+                
+            </div>
+<!--            creamos el ultimo div donde pondremos 3-4                   divs en los que pondremos el copy,                      redes sociales, donde estamos situados-->
+            <div id="copy" id="contenedor-footer">
+                <footer>
+                    <div id="div1">
+                    <p>&copy;2022-2025 DEV OPS COURSES</p>
+                    </div>
+                    <div id="div2">
+<!--                        logos de instagram, linkedin,                           youtube-->
+                        <a href="https://www.instagram.com/devopsdotcom/?hl=es"><img class="d" src="img/instagram.jpg" alt="instagram"></a>
+                        <a href="https://www.linkedin.com/learning/topics/devops-2?originalSubdomain=es"><img class="d" src="img/linkedin.png" alt="linkedin"></a>
+                        <a href="https://www.youtube.com/channel/UCd1bfFrXdmqFvSCuF8HEePA"><img class="d" src="img/youtube.jpg" alt="youtube"></a>
+                        
+                    </div>
+                    <div id="div3">
+<!--                    logo de dev ops-->
+                        <img class="imgd" src="img/devops.png" alt="devops">
+                    </div>
+                </footer>
+            </div>
+        </div>
+        
+	</body>
+</html>

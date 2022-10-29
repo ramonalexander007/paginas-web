@@ -1,0 +1,208 @@
+ body, *{
+                padding: 0;
+                margin: 0;
+                font-family: 'Patrick Hand', cursive;
+            }
+            
+            #contenedor1{
+                width: 100%;
+                background-color: #989da2;
+            }
+            
+            header{
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+                align-self: center;
+                background-color: blanchedalmond;
+                color: white;
+            }
+            
+            header a{
+                text-decoration: none;
+                color: gray;
+            }
+            
+            header img{
+                height: 90px;
+                width: 200px;
+            }
+            
+            header li{
+                list-style: none;
+                display: inline-block;
+                margin-top: 5%;
+                padding-right: 5px;
+            }
+            
+            header a:hover{
+                text-decoration: underline;
+            }
+            
+            .a1{
+                width: 240px;
+                height: 390px;
+                border: solid 1px dimgray;
+                border-radius: 10px;
+                background-color: deepskyblue;
+                color: dimgray;
+                padding: 10px;
+            }
+            
+            .img1{
+                width: 185px;
+                height: 150px;
+                margin-left: 10%;
+            }
+            
+            #clase{
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            nav{
+                padding: 15px;
+            }
+            
+            .u1{
+                border: solid 1px dimgray;
+                width: 240px;
+                height: 390px;
+                border: solid 1px dimgray;
+                border-radius: 10px;
+                background-color: deepskyblue;
+                color: dimgray;
+                padding: 10px;
+            }
+            
+            .img2{
+                width: 185px;
+                height: 150px;
+                margin-left: 10%;
+            }
+            
+            #comentarios{
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            .im{
+                width: 230px;
+                height: 240px;
+            }
+            
+            #fotos{
+                display: flex;
+                justify-content: space-around;
+                border: solid 1px dimgray;
+                border-radius: 10px;
+                background-color: deepskyblue;
+                width: 90%;
+                margin: auto;
+            }
+            
+            h1, h2{
+                font-family: 'Patrick Hand', cursive;
+            }
+            
+            #contenedor-cursos, #contenedor-comentarios, #contenedor-galeria, #contenedor-formulario{
+                
+                margin-bottom: 60px;
+            }
+            
+            h2{
+                margin-bottom: 25px;
+                text-align: center;
+                font-size: 35px;
+            }
+            
+            #contenedor-formulario{
+                border: solid 1px dimgray;
+                border-radius: 10px;
+                background-color: deepskyblue;
+                width: 90%;
+                margin: auto;
+                display: flex;
+                padding: 15px;
+                justify-content: space-evenly;
+            }
+            
+            label, input, textarea{
+                width: 390px;
+                border-radius: 10px;
+            }
+            
+            iframe{
+                border-radius: 10px;
+            }
+            
+            footer{
+                display: flex;
+                background-color: deepskyblue;
+                padding: 15px;
+                justify-content: space-between;
+            }
+            
+            #div1, #div2, #div3{
+                width: 30%;
+            }
+            
+            .d{
+                width: 80px;
+                height: 80px;
+            }
+            
+            .imgd{
+                width: 250px;
+                height: 80px;
+            }
+            
+            #contenedor-formulario{
+                margin-bottom: 60px;
+            }
+            
+            footer p{
+                margin-top: 7%;
+            }
+            
+            #div2{
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            button{
+                border-radius: 10px;
+                background-color: #3f6e98;
+                color: bisque;
+                border: solid 1px gray;
+                margin: auto;
+                width: 120px;
+                height: 50px;
+                margin-left: 14%;
+            }
+            
+            
+  
+            
+            .logo{
+                transition: width .25s, box-shadow .25s;
+                width: 150px;
+            }
+            
+            .logo:hover {
+              box-shadow: 0 0 10px rgba(0,0,0,.2);
+              width: 390px;
+                }
+            
+            
+            .imgd{
+                transition: width .25s, box-shadow .25s;
+                width: 150px;
+            }
+            
+            .imgd:hover {
+              box-shadow: 0 0 10px rgba(0,0,0,.2);
+              width: 390px;
+                }
+            
+            

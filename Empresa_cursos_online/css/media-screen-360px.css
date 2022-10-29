@@ -1,0 +1,97 @@
+@media screen and (max-width: 360px){
+    
+    
+    #clase{
+          flex-direction: column;
+          margin-left: 16%;
+      }
+      
+      #comentarios{
+          flex-direction: column;
+          margin-left: 16%;
+      }
+      
+      #fotos{
+          flex-direction: column;
+          margin-left: 12%;
+      }
+      
+      #contenedor-galeria{
+          width: 260px;
+          margin: auto;
+
+      }
+      
+      #contenedor-formulario{
+          flex-direction: column;
+      }
+      
+      #contenedor-formulario iframe{
+          width: 90%;
+      }
+      
+      #div1, #div2, #div3{
+          width: 50px;
+      }
+      
+      .d{
+          width: 40px;
+          height: 30px;
+      }
+      
+      #div2{
+          flex-direction: column;
+      }
+      
+      #div3{
+          margin-right: 110px;
+      }
+      
+      .imgd{
+          width: 70px;
+      }
+      
+      .logo{
+                transition: width .25s, box-shadow .25s;
+                width: 90px;
+            }
+            
+            .logo:hover {
+              box-shadow: 0 0 10px rgba(0,0,0,.2);
+              width: 390px;
+                }
+            
+            
+            .imgd{
+                transition: width .25s, box-shadow .25s;
+                width: 150px;
+            }
+            
+            .imgd:hover {
+              box-shadow: 0 0 10px rgba(0,0,0,.2);
+              width: 130px;
+                }
+      
+      input, textarea{
+          width: 90%;
+      }
+    
+        .img1{
+                
+                margin-left: 10%;
+            }
+    
+    .img2{
+                margin-left: 10%;
+            }
+    
+    .a1{
+          margin-bottom: 30px;
+      }
+    
+    .u1{
+        margin-bottom: 30px;
+    }
+    
+    
+}

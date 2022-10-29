@@ -1,0 +1,174 @@
+footer{
+            width: 100%;
+            height: 30%;
+            background-color: dimgray;
+            color: white;
+            margin: 0;
+            padding: 0;  
+            } 
+            
+            footer p{
+                padding: 20px;
+            }
+            
+            body, *{
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+            }
+            
+            footer{
+                display: flex;
+                justify-content: space-evenly;
+            }
+            
+            footer div{
+                padding: 20px;
+                
+            }
+            
+            header{
+                background-color: darkseagreen;
+                display: flex;
+                width: 100%;
+                height: 40%;
+                justify-content: space-evenly;
+            }
+            
+            nav{
+                margin: auto;
+/*                font-family: 'Ms Madi', cursive;*/
+            }
+            
+            nav li{
+                list-style: none;
+                display: inline-block;
+            }
+            
+             nav a{
+                text-decoration: none;
+                color: #9b396a;
+                font-weight: bold;
+                
+                font-family: fantasy;
+                
+
+            }
+            
+            li{
+                
+                text-decoration: none;
+                color: #9b396a;
+                font-weight: bold;
+                
+                font-family: fantasy;
+                font-size: 1.4em;
+
+            
+            }
+            
+            nav a:hover{
+                color: brown;
+            }
+            
+            #inicio{
+                color:#4523b5;
+                font-weight: bold;
+                
+                font-size: 1.4em;
+                font-family: fantasy;
+            }
+            
+            .separacion{
+                margin-right: 9px;
+            }
+    
+            .separacion{
+                margin-right: 9px;
+            }
+    
+            .cuerpo{
+                background-color: seagreen;
+            }
+            
+            img{
+                border-radius: 25px;
+/*                border: */
+            }
+            
+            .contenedor div{
+                display: block;
+                margin-top: 40px;
+                
+            }
+            
+            .contenedor h2{
+                margin-left: 25%;
+            }
+            
+            h2{
+                font-family: fantasy;
+                color: brown;
+            }
+    
+            .imagenes{
+                width: 290px;
+                height: 300px;
+                padding: 10px;
+/*                border: 5px solid ;*/
+            }
+    
+            .contenedor{
+                display: flex;
+                justify-content: space-evenly;
+                
+                
+            }
+            
+            .cuerpo{
+                background-color: seagreen;
+            }
+    
+            #coc{
+                text-align: center;
+            }
+    
+    @media screen and (max-width: 799px){
+            header{
+                flex-direction: column;
+/*                display: flex;*/
+            }
+            
+            form{
+                flex-direction: column;
+            }
+            
+            .lineal{
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            footer{
+                flex-direction: column;
+            } 
+            
+            #foton{
+                width: 220px;
+                height: 220px;
+            }
+            
+            
+            header img{
+                margin-left: 25%;
+                width: 230px;
+                height: 220px;
+            }
+                
+                .contenedor{
+                    flex-direction: column;
+                }
+                .contenedor{
+                margin-left: 15%;
+            }
+        }
+    
+    

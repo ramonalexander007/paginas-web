@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>CONTACTO</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <link href="css/contacto.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+        
+        <header>
+        
+            <img id="foton" src="img/logo.png" alt="logotipo danubio pizzeria">
+            <nav>
+                <ul>
+                    <li class="separacion" ><a href="index.html">INICIO</a></li>
+                    <li><a class="separacion" href="index.html">MENU</a></li>
+                    <li class="separacion">CONTACTO</li>
+                    <li><a href="reserva.html">RESERVA</a></li>
+                </ul>
+            </nav>
+            
+            
+        </header>
+        
+        <form action="index.php" method="post" name="formulario-reserva-mesa">
+            <h2 id="coc">CONTACTO</h2>
+            <div class="lineas">
+                <div class="lineal">
+                    <label for="name">NOMBRE:</label><br>
+                    <input type="text" id="name" required placeholder="Escriba su nombre para reservar">
+                </div>
+                <div class="lineal">
+                    <label for="tel">TELEFONO:</label><br>
+                    <input type="tel" id="tel" required placeholder="Escriba su telefono">
+                </div>
+            </div>
+            <div class="lineas">
+                <div class="lineal">
+                    <label for="id">DNI/ID:</label><br>
+                    <input type="number" id="id" required placeholder="Escriba su DNI/ID para reservar">
+                </div>
+                <div class="lineal">
+                    <label for="text">MOTIVO:</label><br>
+                    <input type="text" id="text" required placeholder="motivo del contacto">
+                </div>
+            </div>
+             <div id="div-textarea" class="lineas">
+                <div class="textoo">
+                    <label for="mensaje">MENSAJE PARA EL CONTACTO:</label><br>
+                    <textarea name="texto" placeholder="Escriba aqui el mensaje para el contacto"></textarea>
+                </div>
+            </div>
+            <div class="recto">
+                            <input type="checkbox" name="tratamiento_datos">
+                            <a href="politica-tratamiento-datos.html"><p>Acepto el tratamiento de mis datos</p></a>
+                        </div>     
+            <div class="aaa"  class="lineas">
+                <div>
+                    <input type="submit" value="ENVIAR DATOS">
+                    <input type="reset" value="BORRAR DATOS">
+                </div>
+            </div>
+        </form>
+        
+        
+        <footer>
+        
+            <div>
+                <p>Todos los platos son elaborados con masa <br>fresca y productos de nuestra huerta.</p>
+            </div>
+            <div>
+                <p>CONTACTO:<br>TELEFONO: +34 763839738<br>DIRECCIÓN: Calle Paz, 45 bajo<br>Vitoria-Gasteiz, Álava, 01003<br>EMAIL: pizzeriadanubio@gmail.com</p>
+            </div>
+            <div>
+                <img src="img/logo.png" alt="logotipo danubio pizzeria">
+            </div>
+        
+        </footer>
+
+	</body>
+</html>
